@@ -1,0 +1,36 @@
+spring:
+  main:
+    #允许相同Bean，后者覆盖
+    allow-bean-definition-overriding: true
+  application:
+    name: nacos-customer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.79.11.148:8848
+dubbo:
+  application:
+    name: dubbo-customer
+  protocol:
+    name: dubbo
+    port: 12346
+  registry:
+    address: nacos://120.79.11.148:8848
+  scan:
+    basePackages: com.thappy.dubbo.customer.service.controller
+
+
+server:
+  port: 20200
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    root: info
+    ccom.thappy.dubbo.customer.service: debug
