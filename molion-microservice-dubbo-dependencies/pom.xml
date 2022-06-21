@@ -24,7 +24,7 @@
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
         <dubbo.version>2.7.6</dubbo.version>
         <hikaricp.version>3.4.1</hikaricp.version>
-        <mysql.version>8.0.18</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
     </properties>
 
     <dependencyManagement>
